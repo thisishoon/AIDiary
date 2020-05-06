@@ -1,0 +1,1 @@
+web: gunicorn AIDiary.wsgi --log-file -
