@@ -29,7 +29,7 @@ class DiaryViewSet(viewsets.ModelViewSet):
         if user.is_superuser:
             return Diary.objects.all()
         else:
-            return Diary.objects.filter(user=user, many=True)
+            return Diary.objects.filter(user=user)# , many=True)
 
     def create(self, request, **kwargs):
         content = request.data["content"]
