@@ -34,16 +34,15 @@ class DiaryViewSet(viewsets.ModelViewSet):
     def create(self, request, **kwargs):
         content = request.data["content"]
         user = request.user.id
+        #여기서 content를 통해 감정도를 넣으면 됌
+        feeling = 100
 
-        #여기서 content를 통해 감정도를 넣으면
-
-        serializer = DiarySerializer(data={"content": content, "user": user})
+        serializer = DiarySerializer(data={"content": content, "user": user, "happiness": feeling})
         if serializer.is_valid():
             serializer.save()
             return JsonResponse(serializer.data)
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
 
 
     filter_backends = (DjangoFilterBackend,)

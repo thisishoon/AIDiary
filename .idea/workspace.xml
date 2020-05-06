@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d38698e-1670-49b1-bcab-3931330659a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AIDiary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AIDiary/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diary/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/diary/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diary/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/diary/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,18 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AIDiary/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="160" column="30" selection-start-line="160" selection-start-column="30" selection-end-line="160" selection-end-column="30" />
-              <folding>
-                <element signature="e#308#317#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -75,11 +60,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/diary/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+            <state relative-caret-position="213">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diary/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -149,8 +143,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="534" />
-    <option name="y" value="56" />
+    <option name="x" value="431" />
+    <option name="y" value="29" />
     <option name="width" value="1249" />
     <option name="height" value="968" />
   </component>
@@ -256,15 +250,15 @@
       <workItem from="1587963733995" duration="51000" />
       <workItem from="1587963785268" duration="8182000" />
       <workItem from="1587972522426" duration="12606000" />
-      <workItem from="1588747224576" duration="1766000" />
+      <workItem from="1588747224576" duration="5346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22605000" />
+    <option name="totallyTimeSpent" value="26185000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="534" y="56" width="1249" height="968" extended-state="0" />
+    <frame x="431" y="29" width="1249" height="968" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18880534" />
@@ -330,13 +324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diary/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AIDiary/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -394,6 +381,13 @@
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/diary/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/diary/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -406,8 +400,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/diary/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        <state relative-caret-position="213">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
