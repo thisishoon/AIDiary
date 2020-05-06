@@ -46,10 +46,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'rest_auth.registration',
     'django_filters',
-
-
-
 ]
+
 
 SITE_ID=1
 
@@ -63,6 +61,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
