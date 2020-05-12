@@ -18,6 +18,8 @@ from django.contrib.auth import login, authenticate
 from rest_framework.authtoken.models import Token
 from django.views.decorators.csrf import csrf_exempt
 
+
+
 class DiaryViewSet(viewsets.ModelViewSet):
     permission_classes = (permissions.IsAuthenticated,)
 
@@ -44,6 +46,12 @@ class DiaryViewSet(viewsets.ModelViewSet):
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+    def partial_update(self, request, pk):
+        content = request.data["content"]
+        user = request.user.id
+        Diary.objects.filter(id=pk).update(content=content)
+
+        return JsonResponse({"content": content})
 
     filter_backends = (DjangoFilterBackend,)
     filter_fields = ('user',)
