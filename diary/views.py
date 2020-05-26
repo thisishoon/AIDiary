@@ -47,11 +47,27 @@ class DiaryViewSet(viewsets.ModelViewSet):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def partial_update(self, request, pk):
-        content = request.data["content"]
-        user = request.user.id
-        Diary.objects.filter(id=pk).update(content=content)
+        print("patch실")
+        if pk == "987654321":
+            print("여기실행")
+            content = request.data["content"]
+            user = request.user.id
+            # 여기서 content를 통해 감정도를 넣으면 됌
+            feeling = 100
 
-        return JsonResponse({"content": content})
+            serializer = DiarySerializer(data={"content": content, "user": user, "happiness": feeling})
+            if serializer.is_valid():
+                serializer.save()
+                return JsonResponse(serializer.data)
+            else:
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        else:
+            content = request.data["content"]
+            user = request.user.id
+            Diary.objects.filter(id=pk).update(content=content)
+
+            return JsonResponse({"content": content})
 
     filter_backends = (DjangoFilterBackend,)
     filter_fields = ('user',)
