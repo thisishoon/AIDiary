@@ -12,19 +12,19 @@ from keras_self_attention import SeqSelfAttention
 import json
 from konlpy.tag import Komoran
 from manage import *
-# model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention})
-# token = Tokenizer(9482)
+model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention})
+token = Tokenizer(9482)
 mc = Komoran()
-# with open('wordIndex.json') as json_file:
-#     word_index = json.load(json_file)
-#     token.word_index = word_index
+with open('wordIndex.json') as json_file:
+    word_index = json.load(json_file)
+    token.word_index = word_index
 
 def predict(paragraph):
-    model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention})
-    token = Tokenizer(9482)
-    with open('wordIndex.json') as json_file:
-        word_index = json.load(json_file)
-        token.word_index = word_index
+    # model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention})
+    #     # token = Tokenizer(9482)
+    #     # with open('wordIndex.json') as json_file:
+    #     #     word_index = json.load(json_file)
+    #     #     token.word_index = word_index
 
 
     emotions = [0,0,0,0,0,0]
