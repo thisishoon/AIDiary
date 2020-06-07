@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d38698e-1670-49b1-bcab-3931330659a0" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/DDiary2.py" beforeDir="false" afterPath="$PROJECT_DIR$/DDiary2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+>>>>>>> 1e31171a3f8fdd1eaf85f951d9c8ee74a839016d
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +24,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
@@ -170,12 +184,16 @@
         <option value="$PROJECT_DIR$/diary/views.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/DDiary2.py" />
+=======
+        <option value="$PROJECT_DIR$/Procfile" />
+>>>>>>> 1e31171a3f8fdd1eaf85f951d9c8ee74a839016d
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="658" />
+    <option name="x" value="446" />
     <option name="y" value="34" />
     <option name="width" value="1284" />
     <option name="height" value="975" />
@@ -283,13 +301,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="61841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="588" y="33" width="1284" height="975" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="62481000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="446" y="34" width="1284" height="975" extended-state="0" />
+>>>>>>> 1e31171a3f8fdd1eaf85f951d9c8ee74a839016d
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991708" visible="true" weight="0.20454545" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991708" visible="true" weight="0.20454545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50082916" side_tool="true" weight="0.20062208" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -303,7 +328,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.43632075" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.43632075" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -349,6 +374,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -356,6 +382,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 1e31171a3f8fdd1eaf85f951d9c8ee74a839016d
     <entry file="file://$PROJECT_DIR$/diary/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -544,6 +572,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+<<<<<<< HEAD
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+>>>>>>> 1e31171a3f8fdd1eaf85f951d9c8ee74a839016d
         </state>
       </provider>
     </entry>
