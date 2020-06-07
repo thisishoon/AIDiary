@@ -9,7 +9,7 @@ chardet==3.0.4
 colorama==0.4.3
 defusedxml==0.6.0
 dj-database-url==0.5.0
-Django==3.0.5
+Django==3.0.7
 django-allauth==0.41.0
 django-filter==2.2.0
 django-heroku==0.3.1
@@ -58,7 +58,7 @@ six==1.14.0
 sqlparse==0.3.1
 tensorboard==1.14.0
 tensorboard-plugin-wit==1.6.0.post3
-tensorflow==1.14.0
+tensorflow==1.15.2
 tensorflow-estimator==1.14.0
 termcolor==1.1.0
 tweepy==3.8.0

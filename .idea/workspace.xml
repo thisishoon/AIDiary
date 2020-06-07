@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d38698e-1670-49b1-bcab-3931330659a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DDiary2.py" beforeDir="false" afterPath="$PROJECT_DIR$/DDiary2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/diary/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="794">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -37,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+            <state relative-caret-position="279">
+              <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -56,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/DDiary2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="314">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#28#63#0" expanded="true" />
               </folding>
@@ -181,7 +178,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="669" />
+    <option name="x" value="658" />
     <option name="y" value="34" />
     <option name="width" value="1284" />
     <option name="height" value="975" />
@@ -289,10 +286,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61017000" />
+    <option name="totallyTimeSpent" value="61761000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="669" y="34" width="1284" height="975" extended-state="0" />
+    <frame x="658" y="34" width="1284" height="975" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991708" visible="true" weight="0.20454545" />
@@ -509,7 +506,7 @@
     <entry file="file://$PROJECT_DIR$/diary/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="794">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -539,7 +536,7 @@
     <entry file="file://$PROJECT_DIR$/DDiary2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#28#63#0" expanded="true" />
           </folding>
@@ -548,8 +545,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        <state relative-caret-position="279">
+          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
         </state>
       </provider>
     </entry>
