@@ -1,5 +1,4 @@
 # coding=<utf-8>
-
 # 모델 불러오기
 from keras.models import load_model
 
@@ -8,10 +7,11 @@ from keras.preprocessing.text import Tokenizer
 from keras.models import Sequential
 #from keras.preprocessing.sequence import pad_sequences
 import numpy as np
+
 from keras_self_attention import SeqSelfAttention
 import json
 from konlpy.tag import Komoran
-from manage import *
+
 model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention})
 token = Tokenizer(9482)
 mc = Komoran()
