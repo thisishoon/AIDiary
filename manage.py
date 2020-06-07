@@ -2,6 +2,13 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from konlpy.tag import Komoran
+from keras_self_attention import SeqSelfAttention
+from keras.preprocessing.text import Tokenizer
+from keras.models import load_model
+import json
+
+
 
 
 def main():
@@ -18,4 +25,10 @@ def main():
 
 
 if __name__ == '__main__':
+    # model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention})
+    # token = Tokenizer(9482)
+    # mc = Komoran()
+    # with open('wordIndex.json') as json_file:
+    #     word_index = json.load(json_file)
+    #     token.word_index = word_index
     main()
