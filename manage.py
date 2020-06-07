@@ -7,6 +7,7 @@ from keras_self_attention import SeqSelfAttention
 from keras.preprocessing.text import Tokenizer
 from keras.models import load_model
 import json
+import DDiary2
 
 
 
@@ -25,10 +26,5 @@ def main():
 
 
 if __name__ == '__main__':
-    # model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention})
-    # token = Tokenizer(9482)
-    # mc = Komoran()
-    # with open('wordIndex.json') as json_file:
-    #     word_index = json.load(json_file)
-    #     token.word_index = word_index
     main()
+
