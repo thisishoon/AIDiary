@@ -2,7 +2,6 @@
 
 # 모델 불러오기
 from keras.models import load_model
-
 #토크나이저 불러오기
 from keras.preprocessing.text import Tokenizer
 from keras.models import Sequential

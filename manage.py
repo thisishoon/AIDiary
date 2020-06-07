@@ -2,15 +2,6 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-from konlpy.tag import Komoran
-from keras_self_attention import SeqSelfAttention
-from keras.preprocessing.text import Tokenizer
-from keras.models import load_model
-import json
-import DDiary2
-
-
-
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'AIDiary.settings')
