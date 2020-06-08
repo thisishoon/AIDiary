@@ -16,11 +16,14 @@ mc = Komoran()
 # with open('wordIndex.json') as json_file:
 #     word_index = json.load(json_file)
 #     token.word_index = word_index
+global model
+model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention}, compile=False)
+
 
 def predict(paragraph):
     print("예측 시작!!!!!")
     # mc = Komoran()
-    model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention})
+    # model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention}, compile=False)
     token = Tokenizer(9482)
     with open('wordIndex.json') as json_file:
         word_index = json.load(json_file)
