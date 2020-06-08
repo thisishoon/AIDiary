@@ -19,8 +19,6 @@ from django.conf.urls import url, include
 from rest_framework import routers
 from diary.views import DiaryViewSet
 from rest_framework.routers import DefaultRouter
-import DDiary2
-import Model
 
 router = DefaultRouter()
 router.register(r'diary', DiaryViewSet)
