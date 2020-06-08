@@ -13,7 +13,7 @@ import json
 from konlpy.tag import Komoran
 
 print("@@@@@@????")
-model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention})
+model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention}, compile=False)
 token = Tokenizer(9482)
 mc = Komoran()
 with open('wordIndex.json') as json_file:
