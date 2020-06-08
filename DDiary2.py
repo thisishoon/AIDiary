@@ -2,6 +2,7 @@
 
 # 모델 불러오기
 from keras.models import load_model
+
 #토크나이저 불러오기
 from keras.preprocessing.text import Tokenizer
 from keras.models import Sequential
@@ -10,24 +11,23 @@ import numpy as np
 from keras_self_attention import SeqSelfAttention
 import json
 from konlpy.tag import Komoran
-# model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention})
-# token = Tokenizer(9482)
-mc = Komoran()
-# with open('wordIndex.json') as json_file:
-#     word_index = json.load(json_file)
-#     token.word_index = word_index
-global model
-model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention}, compile=False)
 
+print("@@@@@@????")
+model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention})
+token = Tokenizer(9482)
+mc = Komoran()
+with open('wordIndex.json') as json_file:
+    word_index = json.load(json_file)
+    token.word_index = word_index
 
 def predict(paragraph):
     print("예측 시작!!!!!")
     # mc = Komoran()
-    # model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention}, compile=False)
-    token = Tokenizer(9482)
-    with open('wordIndex.json') as json_file:
-        word_index = json.load(json_file)
-        token.word_index = word_index
+    # model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention})
+    # token = Tokenizer(9482)
+    # with open('wordIndex.json') as json_file:
+    #     word_index = json.load(json_file)
+    #     token.word_index = word_index
 
 
     emotions = [0,0,0,0,0,0]
