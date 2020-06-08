@@ -18,8 +18,6 @@ def main():
 
 if __name__ == '__main__':
     print("1")
-    import DDiary2
-    import Model
     print("1.5")
     main()
 
