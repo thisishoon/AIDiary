@@ -1,1 +1,1 @@
-web: gunicorn AIDiary.wsgi --timeout 30000 --keep-alive 30000 --log-level debug
+web: gunicorn AIDiary.wsgi --timeout 50000 --keep-alive 50000 --log-level debug
