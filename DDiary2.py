@@ -13,7 +13,6 @@ import json
 from konlpy.tag import Komoran
 import tensorflow as tf
 
-print("@@@@@@????")
 model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention}, compile=False)
 token = Tokenizer(9482)
 mc = Komoran()
@@ -24,9 +23,6 @@ with open('wordIndex.json') as json_file:
 
 def predict(paragraph):
     print("예측 시작!!!!!")
-
-
-
     emotions = [0,0,0,0,0,0]
     sentences = paragraph.split('\n')
     import Model
