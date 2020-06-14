@@ -17,7 +17,7 @@ django-request-logging==0.7.1
 django-rest-auth==0.9.5
 djangorestframework==3.11.0
 djangorestframework-jwt==1.11.0
-gast==0.3.3
+gast==0.2.2
 google-auth==1.16.0
 google-auth-oauthlib==0.4.1
 google-pasta==0.2.0
@@ -59,7 +59,7 @@ sqlparse==0.3.1
 tensorboard==1.15.0
 tensorboard-plugin-wit==1.6.0.post3
 tensorflow==1.15.2
-tensorflow-estimator==1.15.0
+tensorflow-estimator==1.15.1
 termcolor==1.1.0
 tweepy==3.8.0
 urllib3==1.25.9
