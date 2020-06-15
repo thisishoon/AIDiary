@@ -11,7 +11,6 @@ import numpy as np
 from keras_self_attention import SeqSelfAttention
 import json
 from konlpy.tag import Komoran
-import tensorflow as tf
 
 model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention}, compile=False)
 token = Tokenizer(9482)
