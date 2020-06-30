@@ -11,16 +11,21 @@ import numpy as np
 from keras_self_attention import SeqSelfAttention
 import json
 from konlpy.tag import Komoran
-
-model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention}, compile=False)
+import tensorflow as tf
+model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention}, compile=False
+                   )
 token = Tokenizer(9482)
 mc = Komoran()
-with open('wordIndex.json') as json_file:
-    word_index = json.load(json_file)
-    token.word_index = word_index
+
+# with open('wordIndex.json') as json_file:
+#     word_index = json.load(json_file)
+#     token.word_index = word_index
 
 
 def predict(paragraph):
+    with open('wordIndex.json') as json_file:
+        word_index = json.load(json_file)
+        token.word_index = word_index
     print("예측 시작!!!!!")
     emotions = [0,0,0,0,0,0]
     sentences = paragraph.split('\n')
