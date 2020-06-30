@@ -12,8 +12,7 @@ from keras_self_attention import SeqSelfAttention
 import json
 from konlpy.tag import Komoran
 import tensorflow as tf
-model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention}, compile=False
-                   )
+
 token = Tokenizer(9482)
 mc = Komoran()
 
@@ -23,6 +22,8 @@ mc = Komoran()
 
 
 def predict(paragraph):
+    model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention}, compile=False
+                       )
     with open('wordIndex.json') as json_file:
         word_index = json.load(json_file)
         token.word_index = word_index
