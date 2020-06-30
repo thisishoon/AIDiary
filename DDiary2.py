@@ -15,8 +15,7 @@ import tensorflow as tf
 
 token = Tokenizer(9482)
 mc = Komoran()
-model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention}, compile=False
-                       )
+model = load_model('Project_model.h5', custom_objects={'SeqSelfAttention': SeqSelfAttention})
 # with open('wordIndex.json') as json_file:
 #     word_index = json.load(json_file)
 #     token.word_index = word_index
