@@ -8,7 +8,6 @@ def put(token, sentence, mc):
     sentence2 = []
     sentence.replace('.', '').replace(',', '').replace('~', '').replace('"', '')
     sentence2 = mc.morphs(sentence)
-    print(sentence2)
     if len(sentence2) < 2:
         output = token.texts_to_sequences(sentence)
     else:
@@ -25,29 +24,29 @@ def convert(input):
 
 def out(sentence, model):
     # 기본처리
-    final = np.array([])
-
+    final = pad_sequences(sentence, maxlen=30)
+    final = model.predict(final)
     # try:
-    k = 0
-    print(sentence)
+    '''
+    k=0
     for nums in sentence:
-        if any(nums) == False:
-            continue
-        final = np.append(final, nums)
-        k = k + 1
-        if k == 29:
-            break
-    if k == 0:
-        return [5]
+            if any(nums) == False:
+                continue
+            final=np.append(final,nums)
+            k=k+1
+            if k == 29:
+                break
+    if k == 0 :
+            return [5]
 
-    final2 = np.array([])
-    final2 = np.append(final2, final)
-    zero = np.zeros((30 - k, 1))
+    final2=np.array([])
+    final2=np.append(final2,final)
+    zero = np.zeros((30-k, 1))
     final2 = np.append(zero, final2)
-    final2 = final2.reshape(30, 1)
+    final2=final2.reshape(30,1)
     result = model.predict(final2.T)
-    print(result)
-    return convert(result)
+    '''
+    return convert(final)
 
 # except:
 #    return [5]
