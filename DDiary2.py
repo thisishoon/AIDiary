@@ -1,5 +1,3 @@
-# coding=<utf-8>
-
 # 모델 불러오기
 from tensorflow import Session
 from tensorflow import global_variables_initializer
@@ -21,7 +19,7 @@ init = global_variables_initializer()
 session.run(init)
 
 model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention})
-token = Tokenizer(9486)
+token = Tokenizer(9470, oov_token = 'OOV')
 mc = Komoran()
 with open('wordIndex.json') as json_file:
     word_index = json.load(json_file)
