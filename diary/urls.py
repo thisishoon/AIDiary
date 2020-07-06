@@ -8,4 +8,6 @@ router.register('scripts', views.DiaryViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('deleteAll', views.deleteAllDiary),
+
 ]

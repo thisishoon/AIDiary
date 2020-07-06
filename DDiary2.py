@@ -19,7 +19,7 @@ init = global_variables_initializer()
 session.run(init)
 
 model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention})
-token = Tokenizer(9470, oov_token = 'OOV')
+token = Tokenizer(5349, oov_token = 'OOV',filters='')
 mc = Komoran()
 with open('wordIndex.json') as json_file:
     word_index = json.load(json_file)
@@ -29,7 +29,6 @@ def predict(paragraph):
     with session.as_default():
         with session.graph.as_default():
             emotions = [0,0,0,0,0,0]
-            sentences = paragraph.split('\n')
             sentences = kss.split_sentences(paragraph)
             import Model
             for sentence in sentences:
