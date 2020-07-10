@@ -18,11 +18,11 @@ session = get_session()
 init = global_variables_initializer()
 session.run(init)
 
-model = load_model('Project_model3.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention})
+model = load_model('Project_model.h5',custom_objects={'SeqSelfAttention':SeqSelfAttention})
 token = Tokenizer(5611, oov_token = 'OOV',filters='')
 mc = Okt()
 load = mc.morphs("로딩중",norm=True, stem=True)
-with open('wordIndexOkt.json') as json_file:
+with open('wordIndex.json') as json_file:
     word_index = json.load(json_file)
     token.word_index = word_index
 
