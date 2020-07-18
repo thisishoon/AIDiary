@@ -4,7 +4,6 @@ from rest_framework.routers import DefaultRouter
 
 
 router = DefaultRouter()
-router.register('scripts', views.DiaryViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

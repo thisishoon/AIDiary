@@ -20,6 +20,7 @@ from rest_framework import routers
 from diary.views import DiaryViewSet
 from rest_framework.routers import DefaultRouter
 from django.contrib.auth import views
+from diary.views import deleteAccount
 
 
 router = DefaultRouter()
@@ -30,4 +31,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('auth/', include('rest_auth.urls')),
     path('auth/registration/', include('rest_auth.registration.urls')),
+    path('auth/delete/', deleteAccount),
+
 ]

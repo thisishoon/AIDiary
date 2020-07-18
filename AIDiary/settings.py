@@ -14,16 +14,16 @@ import os
 import datetime
 from django.core.wsgi import get_wsgi_application
 # 모델 불러오기
-from keras.models import load_model
+# from keras.models import load_model
 
 #토크나이저 불러오기
-from keras.preprocessing.text import Tokenizer
-from keras.models import Sequential
-#from keras.preprocessing.sequence import pad_sequences
-import numpy as np
-from keras_self_attention import SeqSelfAttention
-import json
-from konlpy.tag import Komoran
+# from keras.preprocessing.text import Tokenizer
+# from keras.models import Sequential
+# #from keras.preprocessing.sequence import pad_sequences
+# import numpy as np
+# from keras_self_attention import SeqSelfAttention
+# import json
+# from konlpy.tag import Komoran
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'rest_auth.registration',
     'django_filters',
+    'allauth.socialaccount',
 ]
 
 
