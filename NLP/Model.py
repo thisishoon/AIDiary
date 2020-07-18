@@ -8,12 +8,15 @@ def put(token, sentence, mc):
         stopwords = ['의','가','이','은','들','는','과','도','를','으로','에','와']
         sware = ['ㅈ', '좇', '좃', '젓']
         sentence2 = []
-        sentence = re.sub('\.|\,|\~|\"|\=|\<|\>|\*|\'', '', sentence)
-        sentence = re.sub("\n", '', sentence)
-        sentence = re.sub('[0-9]', '', sentence)
+        sentence = re.sub('\,|~|\"|=|<|>|\*|\'', '', sentence)
+        sentence = re.sub('\(|\)', ',', sentence)
+        sentence = re.sub('[0-9]+', 'num', sentence)
+        sentence = re.sub(";+", ';', sentence)
+        sentence = re.sub("[?]{2,}", '??', sentence)
+        sentence = re.sub("[.]{2,}", '..', sentence)
+        sentence = re.sub("[!]{2,}", '!!', sentence)
         #sentence = re.sub('[a-zA-Z]', '', sentence)
         sentence2 = mc.morphs(sentence,norm=True, stem=True)
-        #print(sentence2)
         for word in sentence2:
                 if word in sware:
                         sentence2[sentence2.index(word)] = '좆'
@@ -25,18 +28,21 @@ def put(token, sentence, mc):
 def convert(input):
         tot = [0,0,0,0,0]
         for emotion in input:
+                #print(emotion)
                 tot = emotion+tot
         result = np.argmax(tot, axis=1)
+        #print(tot)
         return result
 
-def out(sentence, m1,m2,m3,m4,m5) :
+def out(sentence,m):#1,m2,m3):#,m4,m5,m6,m7):#,m8,m9,m10) :
      #기본처리
+        result = []
         final=np.array([])
         k=0
         #sentence의 원소를 체크합니다.
         for nums in sentence:
                 if k==30:
-                    break
+                        break
                 final=np.append(final,nums) # 토큰에 있는 단어면 추가합니다.
                 k=k+1 # 추가된 단어의 개수입니다.
         if k == 0 :
@@ -49,6 +55,7 @@ def out(sentence, m1,m2,m3,m4,m5) :
                 final2 = np.append(zero, final2) #padding과 유사한 효과입니다.
                 
         final2=final2.reshape(30,1) # 길이 30의 문장을 만들기 위해 reshape 합니다.
-        
-        result = [m1.predict(final2.T),m2.predict(final2.T),m3.predict(final2.T),m4.predict(final2.T),m5.predict(final2.T)]
+        result = [m.predict(final2.T)]#,m2.predict(final2.T),m3.predict(final2.T)]#,m4.predict(final2.T),
+                  #m5.predict(final2.T),m6.predict(final2.T),m7.predict(final2.T)]#,m8.predict(final2.T),
+                  #m9.predict(final2.T),m10.predict(final2.T)]
         return convert(result)
