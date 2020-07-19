@@ -29,8 +29,8 @@ router.register(r'diary', DiaryViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
+    path('auth/delete/', deleteAccount),
     path('auth/', include('rest_auth.urls')),
     path('auth/registration/', include('rest_auth.registration.urls')),
-    path('auth/delete/', deleteAccount),
 
 ]
