@@ -1,6 +1,9 @@
 # AIDiary
 
-# 마음의 날씨 (Android AI Diary App)    
+## Link (Google Play)
+[MindWeather](https://play.google.com/store/apps/details?id=com.inju.mindWeather)
+
+## 마음의 날씨 (Android AI Diary App)    
 
 <div><img src="https://user-images.githubusercontent.com/56947879/87740677-be44ad00-c81d-11ea-9948-026051077fb9.png"  width="100%"></div>
 
