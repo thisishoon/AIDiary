@@ -40,7 +40,7 @@ numpy==1.18.4
 oauthlib==3.1.0
 opt-einsum==3.2.1
 pandas==1.0.4
-protobuf==3.12.2
+protobuf==3.18.3
 psycopg2==2.7.5
 psycopg2-binary==2.8.5
 pyasn1==0.4.8
